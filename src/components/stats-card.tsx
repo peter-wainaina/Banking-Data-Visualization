@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "./card"
 import type { ProcessingStats } from "../types/bankingtypes"
-import { FileCheck, FileX, Copy, Clock, AlertTriangle, CheckCircle } from "lucide-react"
+import { FileCheck, FileX, Copy, Clock,  CheckCircle } from "lucide-react"
 
 interface StatsCardsProps {
   stats: ProcessingStats

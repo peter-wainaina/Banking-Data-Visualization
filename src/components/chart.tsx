@@ -13,7 +13,7 @@ export interface ChartConfig {
 export function ChartContainer({
   children,
   className = "",
-  config,
+  
 }: {
   children: React.ReactNode
   className?: string
@@ -25,7 +25,7 @@ export function ChartContainer({
 
 
 // ChartTooltip: Wrapper for recharts custom tooltip
-export function ChartTooltip({ content }: { content: (props: any) => React.ReactNode }) {
+export function ChartTooltip({ }: { content: (props: any) => React.ReactNode }) {
   // This component is just a passthrough for recharts' <Tooltip content={...} />
   // Usage: <ChartTooltip content={...} />
   // In actual chart, you should use <Tooltip content={<ChartTooltip content={...} />} />

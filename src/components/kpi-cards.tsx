@@ -39,7 +39,7 @@ export function KPICards({ data }: KPICardsProps) {
       }
       return sum
     }, 0) / (cardsData.length || 1)
-  const totalRewards = data.reduce((sum, tx) => sum + (tx.rewardsPoints || 0), 0)
+  
 
   const kpis = [
     {

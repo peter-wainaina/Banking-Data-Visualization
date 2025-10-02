@@ -1,6 +1,6 @@
 // src/services/validator.ts
 import type { RawTransaction, ValidationResult } from "../types/bankingtypes";
-import { parseAmount, parseDate } from "../utils/parser";
+import { parseAmount,  } from "../utils/parser";
 
 export class DataValidator {
   validateDataset(rawData: RawTransaction[]) {

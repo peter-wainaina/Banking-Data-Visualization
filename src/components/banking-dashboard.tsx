@@ -20,7 +20,7 @@ import { AccountTypeChart } from "./charts/account-type-chart"
 import { AgeDistributionChart } from "./charts/age-distribution-chart"
 import { DepositWithdrawalChart } from "./charts/deposit-withdrawal-chart"
 import { TopCitiesChart } from "./charts/top-cities-chart"
-import { MonthlyVolumeChart } from "./charts/monthly-volume-chart"
+
 import { ProductMixChart } from "./charts/product-mix-chart"
 // import { PerformanceMetricsChart } from "./charts/performance-metric-chart"
 import { LTVHistogramChart } from "./charts/ltv-histogram-chart"

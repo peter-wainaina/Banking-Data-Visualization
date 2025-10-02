@@ -1,4 +1,4 @@
-import type { RawTransaction, CleanedTransaction, ProcessingStats } from "../types/bankingtypes";
+import type {  CleanedTransaction, ProcessingStats } from "../types/bankingtypes";
 import { mapToRawTransaction } from "../utils/mapper";
 import { cleanTransaction } from "./cleaning";
 import { DataValidator } from "../services/validator";
