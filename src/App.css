@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:is(.dark *));
+
+
+:root {
+  --background: #fcfdff; /* Tailwind bg-gray-100 */
+  --foreground: #111827; /* Tailwind text-gray-900 */
+  --card: #f9fafb; /* Tailwind bg-gray-50 */
+  --card-foreground: #111827; /* Tailwind text-gray-900 */
+  --popover: #fff; /* Tailwind bg-white */
+  --popover-foreground: #111827; /* Tailwind text-gray-900 */
+  --primary: #2563eb; /* Tailwind blue-600 */
+  --primary-foreground: #fff; /* Tailwind text-white */
+  --secondary: #e5e7eb; /* Tailwind gray-200 */
+  --secondary-foreground: #111827; /* Tailwind text-gray-900 */
+  --muted: #e5e7eb; /* Tailwind gray-200 */
+  --muted-foreground: #6b7280; /* Tailwind gray-500 */
+  --accent: #f59e42; /* Tailwind orange-400 */
+  --accent-foreground: #111827; /* Tailwind text-gray-900 */
+  --destructive: #ef4444; /* Tailwind red-500 */
+  --destructive-foreground: #fff; /* Tailwind text-white */
+  --border: #d1d5db; /* Tailwind border-gray-300 */
+  --input: #f3f4f6; /* Tailwind bg-gray-100 */
+  --ring: #2563eb; /* Tailwind ring-blue-600 */
+  --chart-1: #2563eb; /* Tailwind blue-600 */
+  --chart-2: #10b981; /* Tailwind emerald-500 */
+  --chart-3: #f59e42; /* Tailwind orange-400 */
+  --chart-4: #ef4444; /* Tailwind red-500 */
+  --chart-5: #6b7280; /* Tailwind gray-500 */
+  --radius: 0.625rem; /* Custom border radius */
+  --sidebar: #f9fafb; /* Tailwind bg-gray-50 */
+  --sidebar-foreground: #111827; /* Tailwind text-gray-900 */
+  --sidebar-primary: #2563eb; /* Tailwind blue-600 */
+  --sidebar-primary-foreground: #fff; /* Tailwind text-white */
+  --sidebar-accent: #f59e42; /* Tailwind orange-400 */
+  --sidebar-accent-foreground: #111827; /* Tailwind text-gray-900 */
+  --sidebar-border: #d1d5db; /* Tailwind border-gray-300 */
+  --sidebar-ring: #2563eb; /* Tailwind ring-blue-600 */
+}
+
+.dark {
+  --background: #111827; /* Tailwind bg-gray-900 */
+  --foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --card: #1f2937; /* Tailwind bg-gray-800 */
+  --card-foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --popover: #1f2937; /* Tailwind bg-gray-800 */
+  --popover-foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --primary: #2563eb; /* Tailwind blue-600 */
+  --primary-foreground: #fff; /* Tailwind text-white */
+  --secondary: #374151; /* Tailwind gray-700 */
+  --secondary-foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --muted: #374151; /* Tailwind gray-700 */
+  --muted-foreground: #9ca3af; /* Tailwind gray-400 */
+  --accent: #f59e42; /* Tailwind orange-400 */
+  --accent-foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --destructive: #ef4444; /* Tailwind red-500 */
+  --destructive-foreground: #fff; /* Tailwind text-white */
+  --border: #4b5563; /* Tailwind border-gray-600 */
+  --input: #111827; /* Tailwind bg-gray-900 */
+  --ring: #2563eb; /* Tailwind ring-blue-600 */
+  --chart-1: #2563eb; /* Tailwind blue-600 */
+  --chart-2: #10b981; /* Tailwind emerald-500 */
+  --chart-3: #f59e42; /* Tailwind orange-400 */
+  --chart-4: #ef4444; /* Tailwind red-500 */
+  --chart-5: #9ca3af; /* Tailwind gray-400 */
+  --radius: 0.625rem; /* Custom border radius */
+  --sidebar: #1f2937; /* Tailwind bg-gray-800 */
+  --sidebar-foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --sidebar-primary: #2563eb; /* Tailwind blue-600 */
+  --sidebar-primary-foreground: #fff; /* Tailwind text-white */
+  --sidebar-accent: #f59e42; /* Tailwind orange-400 */
+  --sidebar-accent-foreground: #f3f4f6; /* Tailwind text-gray-100 */
+  --sidebar-border: #4b5563; /* Tailwind border-gray-600 */
+  --sidebar-ring: #2563eb; /* Tailwind ring-blue-600 */
+}
+
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
